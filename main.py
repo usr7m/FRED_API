@@ -41,3 +41,11 @@ class API():
 		resp = ast.literal_eval(resp)
 		data = pd.DataFrame(resp)['seriess'].apply(pd.Series)
 		return data
+	
+	
+# usage:
+
+# fred = API()
+
+# fred.search('ICE AA YIELD')
+# fred.observations('BAMLC0A1CAAAEY')
